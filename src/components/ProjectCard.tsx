@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useRef, useState } from 'react';
-import styles from '@/styles/ProjectCard.module.css'
+import styles from '@/styles/ProjectCard.module.scss'
 
 interface ProjectCardProps {
     title: string;
@@ -10,7 +10,6 @@ interface ProjectCardProps {
     imgWidth: number;
     imgHeight: number;
     imgScale: number;
-    boxClassName: string;
     titleClassName: string;
     blurbClassName: string;
 }
@@ -68,7 +67,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         <article 
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave} 
-            className={ props.boxClassName }            
+            className={ styles.card }            
         >            
             <div 
                 className={ styles.imgWindow }
