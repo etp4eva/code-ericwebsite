@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '@/styles/Header.module.scss'
 import { Raleway } from '@next/font/google'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { RefObject, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { TypeOfExpression } from 'typescript'
 
 const raleway = Raleway({ subsets: ['latin'], weight: '400' })
@@ -16,51 +16,45 @@ interface HeaderProps {
     lockScale: LockScale
 };
 
-const useWindowSize = () => {
+const useElementSize = (targetRef: RefObject<HTMLElement>) => {
     const [size, setSize] = useState([0, 0]);
     useLayoutEffect(() => {
       function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
+        if (targetRef.current)
+            setSize([targetRef.current.clientWidth, targetRef.current.clientHeight]);
       }
       window.addEventListener('resize', updateSize);
       updateSize();
       return () => window.removeEventListener('resize', updateSize);
-    }, []);
+    }, [targetRef]);
     return size;
 }
 
-export const Header = (props: HeaderProps) => {   
-    const targetRef = useRef<HTMLElement>(null);
-    const [width, height] = useWindowSize(); 
+const useScrollY = () => {
     const [scrollY, setScrollY] = useState(0);
-
-    // holds the timer for setTimeout and clearInterval
-    let movement_timer: ReturnType<typeof setTimeout>;
-
-    // the number of ms the window size must stay the same size before the
-    // dimension state variable is reset
-    const RESET_TIMEOUT = 100;
-
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
-        };
-    
-        // just trigger this so that the initial state 
-        // is updated as soon as the component is mounted
-        // related: https://stackoverflow.com/a/63408216
-        handleScroll();
-    
+        };        
         window.addEventListener("scroll", handleScroll);
+        handleScroll();
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+    return scrollY;
+}
 
+export const Header = (props: HeaderProps) => {   
+    const targetRef = useRef<HTMLElement>(null);
+    const [width, height] = useElementSize(targetRef); 
+    const scrollY = useScrollY();
+    
     let invisible: string | null = styles.invisible;
     
     if (props.lockScale === LockScale.REACTIVE)
     {
+        console.log(`ScrollY: ${scrollY} height: ${height}`);
         invisible = (scrollY < height - 55) ? styles.invisible : null;
     }
     else if (props.lockScale === LockScale.THIN)

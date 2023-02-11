@@ -34,7 +34,6 @@ export default function Home() {
               imgScale={0.33}
               videoSrc={'/videos/trees.webm'}
               blurb={'Hello i\'m tree'} 
-              boxClassName={ styles.contentBox } 
               titleClassName={ lato.className } 
               blurbClassName={ lato.className }
             />
@@ -47,7 +46,6 @@ export default function Home() {
               imgScale={0.33}
               videoSrc={'/videos/trees.webm'}
               blurb={'Hello i\'m tree'} 
-              boxClassName={ styles.contentBox } 
               titleClassName={ lato.className } 
               blurbClassName={ lato.className } 
             />
