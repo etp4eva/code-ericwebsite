@@ -1,10 +1,7 @@
 import Image from 'next/image'
 import styles from '@/styles/Header.module.scss'
-import { Raleway } from '@next/font/google'
 import { RefObject, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { TypeOfExpression } from 'typescript'
-
-const raleway = Raleway({ subsets: ['latin'], weight: '400' })
 
 export enum LockScale  {
     THIN     = 'THIN',
@@ -54,7 +51,6 @@ export const Header = (props: HeaderProps) => {
     
     if (props.lockScale === LockScale.REACTIVE)
     {
-        console.log(`ScrollY: ${scrollY} height: ${height}`);
         invisible = (scrollY < height - 55) ? styles.invisible : null;
     }
     else if (props.lockScale === LockScale.THIN)
@@ -72,7 +68,7 @@ export const Header = (props: HeaderProps) => {
                 alt="Eric Pledger" 
             />
             <h1 
-                className={ [styles.titleThick, raleway.className].join(' ') }
+                className={ styles.titleThick }
             >
                 Eric Pledger
             </h1>
@@ -82,9 +78,7 @@ export const Header = (props: HeaderProps) => {
     return (
         <>
             <header className={ [styles.headerThin, invisible].join(" ") }>
-                <h1 
-                    className={ [styles.titleThin, raleway.className].join(' ') }
-                >
+                <h1 className={ styles.titleThin }>
                     Eric Pledger
                 </h1>
                 <Image 

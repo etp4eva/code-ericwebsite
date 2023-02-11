@@ -10,8 +10,6 @@ interface ProjectCardProps {
     imgWidth: number;
     imgHeight: number;
     imgScale: number;
-    titleClassName: string;
-    blurbClassName: string;
 }
 
 export const ProjectCard = (props: ProjectCardProps) => {
@@ -76,8 +74,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
                 { videoBanner }
             </div>
             <div className={ styles.textArea }>
-                <h3 className={ props.titleClassName }>{ props.title }</h3>
-                <p className={ props.blurbClassName } >{ props.blurb }</p> 
+                <h3>{ props.title }</h3>
+                <p>{ props.blurb }</p> 
             </div>
         </article>
     )
