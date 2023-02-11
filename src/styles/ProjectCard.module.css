@@ -1,0 +1,21 @@
+.imgWindow {
+    display: grid;
+}
+
+.stacked {
+    grid-area: 1 /1;
+}
+
+.fadeIn:hover {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.textArea {
+    border-bottom: solid 1px;
+    border-color:deepskyblue;
+}
