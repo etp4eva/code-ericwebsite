@@ -1,15 +1,22 @@
 import Image from 'next/image'
 import { useRef, useState } from 'react';
 import styles from '@/styles/ProjectCard.module.scss'
+import Link from 'next/link';
 
-interface ProjectCardProps {
+export interface ProjectSummary {
+    slug: string;
     title: string;
+    tags: string[];
+    blurb: string;
     imgSrc: string;
     videoSrc?: string;
-    blurb: string;
     imgWidth: number;
     imgHeight: number;
     imgScale: number;
+}
+
+interface ProjectCardProps {
+    project: ProjectSummary;
 }
 
 export const ProjectCard = (props: ProjectCardProps) => {
@@ -17,20 +24,20 @@ export const ProjectCard = (props: ProjectCardProps) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     
     const [width, height] = [
-        props.imgWidth * props.imgScale,
-        props.imgHeight * props.imgScale
+        props.project.imgWidth * props.project.imgScale,
+        props.project.imgHeight * props.project.imgScale
     ]
 
     const imageBanner = (
         <Image 
             className={ styles.stacked }
-            src={ props.imgSrc } 
+            src={ props.project.imgSrc } 
             width={ width } height={ height } 
-            alt={ props.title }             
+            alt={ props.project.title }             
         />
     );
 
-    const videoBanner = (props.videoSrc) ? (
+    const videoBanner = (props.project.videoSrc) ? (
             <video
                 ref={ videoRef }
                 width={ width } height={ height } 
@@ -38,7 +45,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
                 className={ styles.stacked }
                 hidden={ !isPlaying }
             >
-                <source src={props.videoSrc} type="video/webm"/>
+                <source src={props.project.videoSrc} type="video/webm"/>
             </video>
     ) : undefined; 
 
@@ -61,22 +68,29 @@ export const ProjectCard = (props: ProjectCardProps) => {
         setPlaying(false);
     }
 
-    return (
+    return (        
         <article 
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave} 
-            className={ styles.card }            
+            className={styles.card} 
+            style={{maxWidth: width}}           
         >            
-            <div 
-                className={ styles.imgWindow }
-            >                
-                { imageBanner }
-                { videoBanner }
-            </div>
-            <div className={ styles.textArea }>
-                <h3>{ props.title }</h3>
-                <p>{ props.blurb }</p> 
-            </div>
+            <Link 
+                className={ styles.link } 
+                href={`/projects/${encodeURIComponent(props.project.slug)}`}
+            >    
+                <div 
+                    className={ styles.imgWindow }
+                >                
+                    { imageBanner }
+                    { videoBanner }
+                </div>
+            
+                <div className={ styles.textArea }>                
+                        <h3>{ props.project.title }</h3>                
+                        <p>{ props.project.blurb }</p>                 
+                </div>
+            </Link>
         </article>
     )
 }

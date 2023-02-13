@@ -4,16 +4,6 @@
   box-shadow: 0px 2px 10px  rgba(0,0,0,0.4);
 }
 
-.projectRows {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-  gap: 10px;
-
-  padding: 0px 20px;
-}
-
 .contentBox {  
   background: colors.$card-background-color;
   background: colors.$card-background-gradient;

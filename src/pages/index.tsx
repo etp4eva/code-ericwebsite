@@ -1,10 +1,23 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
-import { ProjectCard } from '@/components/ProjectCard'
+import { ProjectSummary } from '@/components/ProjectCard'
 import { Header, LockScale } from '@/components/HeaderComponent'
 import { Raleway } from '@next/font/google'
+import { ProjectList } from '@/components/ProjectList'
 
 const raleway = Raleway({ subsets: ['latin']})
+
+const projectPlaceholder: ProjectSummary = {
+  slug: 'trees',
+  title: 'Trees',
+  tags: ['code', 'game', 'c++', 'opengl'],
+  blurb: 'This is a brief explanation of the project and how I made it including with which technologies etc. TODO: clicking should link to a page showing a more detailed post',
+  imgSrc: '/images/trees.jpg',
+  videoSrc: '/videos/trees.webm',
+  imgWidth: 1280,
+  imgHeight: 400,
+  imgScale: 0.33,
+}
 
 export default function Home() {
   return (
@@ -23,30 +36,7 @@ export default function Home() {
           <p className={ styles.indent }>Nulla sed dignissim dui. Cras sed eros nec velit elementum molestie. Maecenas gravida odio id ipsum commodo, vel tristique nibh luctus. Nam ullamcorper orci non massa bibendum scelerisque. Quisque rhoncus non diam nec bibendum. Donec eget fringilla est. Aenean pharetra, ligula ut aliquam posuere, tortor dolor ornare magna, ac vehicula enim purus quis felis. Etiam vestibulum ante eget velit mollis interdum. Donec porttitor, enim non sodales fermentum, libero magna pretium lectus, id fringilla dui erat a velit. Phasellus nunc orci, faucibus nec sodales at, tincidunt non nunc.</p>
         </main>
 
-        <div>
-          <h2>Projects</h2>
-          <div className={ styles.projectRows }>
-            <ProjectCard 
-              title={'Trees'} 
-              imgSrc={'/images/trees.jpg'} 
-              imgWidth={1280}
-              imgHeight={400}
-              imgScale={0.33}
-              videoSrc={'/videos/trees.webm'}
-              blurb={'Hello i\'m tree'} 
-            />
-
-            <ProjectCard 
-              title={'Trees'} 
-              imgSrc={'/images/trees.jpg'}
-              imgWidth={1280}
-              imgHeight={400}
-              imgScale={0.33}
-              videoSrc={'/videos/trees.webm'}
-              blurb={'Hello i\'m tree'} 
-            />
-          </div>
-        </div>
+        <ProjectList projects={[projectPlaceholder, projectPlaceholder]} />
 
         <footer>
           <div>footer</div>
