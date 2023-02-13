@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      <body className={ raleway.className }>
+      <body className={ [raleway.className, styles.body].join(" ") }>
         <Header lockScale={ LockScale.REACTIVE }/>
         
         <main className={ styles.contentBox }>
@@ -36,7 +36,7 @@ export default function Home() {
           <p className={ styles.indent }>Nulla sed dignissim dui. Cras sed eros nec velit elementum molestie. Maecenas gravida odio id ipsum commodo, vel tristique nibh luctus. Nam ullamcorper orci non massa bibendum scelerisque. Quisque rhoncus non diam nec bibendum. Donec eget fringilla est. Aenean pharetra, ligula ut aliquam posuere, tortor dolor ornare magna, ac vehicula enim purus quis felis. Etiam vestibulum ante eget velit mollis interdum. Donec porttitor, enim non sodales fermentum, libero magna pretium lectus, id fringilla dui erat a velit. Phasellus nunc orci, faucibus nec sodales at, tincidunt non nunc.</p>
         </main>
 
-        <ProjectList projects={[projectPlaceholder, projectPlaceholder]} />
+        <ProjectList projects={[projectPlaceholder, projectPlaceholder, projectPlaceholder, projectPlaceholder, projectPlaceholder]} />
 
         <footer>
           <div>footer</div>

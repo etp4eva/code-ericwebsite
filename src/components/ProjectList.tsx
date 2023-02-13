@@ -8,19 +8,21 @@ interface ProjectListProps {
 export const ProjectList = (props: ProjectListProps) => {
 
     return (
-        <div>
-          <h2>Projects</h2>
-          <div className={ styles.projectRows }>
-            {
-                props.projects.map((project, idx) => (
-                    <ProjectCard 
-                        key={idx}
-                        project={project}
-                    />
-                ))                
-            }
-            
-          </div>                    
+        <div className={ styles.container }>
+            <div className={ styles.headerContainer }>
+                <h2>Projects</h2>
+            </div>
+            <div className={ styles.projectRows }>
+                {
+                    props.projects.map((project, idx) => (
+                        <ProjectCard 
+                            key={idx}
+                            project={project}
+                        />
+                    ))                
+                }
+                
+            </div>
         </div>
     )
 }

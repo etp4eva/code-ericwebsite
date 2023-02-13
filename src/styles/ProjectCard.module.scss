@@ -1,4 +1,5 @@
 @use 'colors';
+@use 'sizes';
 
 .imgWindow {
     display: grid;
@@ -17,7 +18,24 @@
     100% { opacity: 1; }
 }
 
+
+@media only screen and (max-width: sizes.$max-width) {
+    .card {
+        width: 100vw; 
+    }
+    .imgWindow {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .card {
+        text-align: justify;
+    }
+}
+
+
 .card {
+    justify-items: center;
     background: colors.$card-background-color;    
         
     border-bottom: solid 1px;

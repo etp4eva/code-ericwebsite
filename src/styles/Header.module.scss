@@ -1,3 +1,5 @@
+@use 'sizes';
+
 .headerThick
 {
     padding: 50px 0px 0px 0px;
@@ -34,11 +36,17 @@
 
 .titleThick
 {    
-    font-size: 80pt;
+    font-size: 65pt;
     text-decoration: underline;
 
     padding: 0px 30px;
     margin: 10px 0px;
+}
+
+@media only screen and (max-width: sizes.$max-width) {
+    .titleThick {
+        font-size: 40pt;
+    }
 }
 
 .roundImageThick

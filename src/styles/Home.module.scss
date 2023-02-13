@@ -1,7 +1,24 @@
 @use 'colors';
+@use 'sizes';
 
 .shadow {
   box-shadow: 0px 2px 10px  rgba(0,0,0,0.4);
+}
+
+.body {
+  align-items: center;
+}
+
+@media only screen and (max-width: sizes.$max-width) {
+  .contentBox {
+    width: 100%;   
+
+    text-align: justify;
+  }
+
+  .contentBox p {
+    padding: 0px 10px;
+  }
 }
 
 .contentBox {  
@@ -10,6 +27,8 @@
 
   border-bottom: solid 1px;
   border-color: colors.$card-border-color;
+
+  max-width: sizes.$content-width;
 }
 
 .indent {
