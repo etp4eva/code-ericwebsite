@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
 import { ProjectSummary } from '@/components/ProjectCard'
-import { Header, LockScale } from '@/components/HeaderComponent'
+import { Header, LockScale } from '@/components/Header'
 import { Raleway } from '@next/font/google'
 import { ProjectList } from '@/components/ProjectList'
+import { Footer } from '@/components/Footer'
 
 const raleway = Raleway({ subsets: ['latin']})
 
@@ -38,11 +39,8 @@ export default function Home() {
 
         <ProjectList projects={[projectPlaceholder, projectPlaceholder, projectPlaceholder, projectPlaceholder, projectPlaceholder]} />
 
-        <footer>
-          <div>footer</div>
-          <div>footer</div>
-          <div>footer</div>
-        </footer> 
+        <Footer/>
+        
       </body>
     </>
   )

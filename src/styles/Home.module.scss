@@ -9,6 +9,13 @@
   align-items: center;
 }
 
+@media only screen and (max-width: sizes.$content-width) {
+  .contentBox {
+    margin: 0;
+  }
+
+}
+
 @media only screen and (max-width: sizes.$max-width) {
   .contentBox {
     width: 100%;   

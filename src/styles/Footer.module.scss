@@ -1,0 +1,17 @@
+@use 'colors';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    width: 100%;
+
+    border-top: solid 2px;
+    border-color: colors.$card-border-color;    
+    background-color: black;
+
+    color: white;
+}

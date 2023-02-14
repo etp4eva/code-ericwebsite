@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/Header.module.scss'
 import { RefObject, useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { TypeOfExpression } from 'typescript'
 
 export enum LockScale  {
     THIN     = 'THIN',
@@ -15,7 +14,7 @@ interface HeaderProps {
 
 const useElementSize = (targetRef: RefObject<HTMLElement>) => {
     const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
+    useEffect(() => {
       function updateSize() {
         if (targetRef.current)
             setSize([targetRef.current.clientWidth, targetRef.current.clientHeight]);
@@ -46,7 +45,7 @@ export const Header = (props: HeaderProps) => {
     const targetRef = useRef<HTMLElement>(null);
     const [width, height] = useElementSize(targetRef); 
     const scrollY = useScrollY();
-    
+        
     let invisible: string | null = styles.invisible;
     
     if (props.lockScale === LockScale.REACTIVE)
@@ -81,14 +80,16 @@ export const Header = (props: HeaderProps) => {
                 <h1 className={ styles.titleThin }>
                     Eric Pledger
                 </h1>
+                             
+                <div className={ styles.column2 }></div>
+
                 <Image 
                     src="/images/eric.jpg"
                     className={ styles.roundImageThin }
                     height={100}
                     width={100}
                     alt="Eric Pledger" 
-                />                                
-                <div className={ styles.column3 }></div>
+                />   
             </header>
             {thickHeader}
         </>
