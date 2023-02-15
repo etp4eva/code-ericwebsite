@@ -2,18 +2,7 @@ import Image from 'next/image'
 import { useRef, useState } from 'react';
 import styles from '@/styles/ProjectCard.module.scss'
 import Link from 'next/link';
-
-export interface ProjectSummary {
-    slug: string;
-    title: string;
-    tags: string[];
-    blurb: string;
-    imgSrc: string;
-    videoSrc?: string;
-    imgWidth: number;
-    imgHeight: number;
-    imgScale: number;
-}
+import { ProjectSummary } from '@/lib/Projects';
 
 interface ProjectCardProps {
     project: ProjectSummary;

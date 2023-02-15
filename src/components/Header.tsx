@@ -12,20 +12,6 @@ interface HeaderProps {
     lockScale: LockScale
 };
 
-const useElementSize = (targetRef: RefObject<HTMLElement>) => {
-    const [size, setSize] = useState([0, 0]);
-    useEffect(() => {
-      function updateSize() {
-        if (targetRef.current)
-            setSize([targetRef.current.clientWidth, targetRef.current.clientHeight]);
-      }
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, [targetRef]);
-    return size;
-}
-
 const useScrollY = () => {
     const [scrollY, setScrollY] = useState(0);
     useEffect(() => {
@@ -43,14 +29,13 @@ const useScrollY = () => {
 
 export const Header = (props: HeaderProps) => {   
     const targetRef = useRef<HTMLElement>(null);
-    const [width, height] = useElementSize(targetRef); 
     const scrollY = useScrollY();
         
     let invisible: string | null = styles.invisible;
     
     if (props.lockScale === LockScale.REACTIVE)
     {
-        invisible = (scrollY < height - 55) ? styles.invisible : null;
+        invisible = (scrollY < 273) ? styles.invisible : null;
     }
     else if (props.lockScale === LockScale.THIN)
     {

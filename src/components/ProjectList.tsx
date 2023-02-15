@@ -1,11 +1,23 @@
-import { ProjectCard, ProjectSummary } from "./ProjectCard";
+import { ProjectSummary } from "@/lib/Projects";
+import { ProjectCard } from "./ProjectCard";
 import styles from '@/styles/ProjectList.module.scss'
 
 interface ProjectListProps {
     projects: ProjectSummary[];
 }
 
-export const ProjectList = (props: ProjectListProps) => {
+export const ProjectList = ({projects}: ProjectListProps) => {
+
+    let projectCard = undefined;
+
+    if (projects) {
+        projectCard = projects.map((project, idx) => (
+            <ProjectCard 
+                key={idx}
+                project={project}
+            />
+        ))
+    }
 
     return (
         <div className={ styles.container }>
@@ -14,14 +26,8 @@ export const ProjectList = (props: ProjectListProps) => {
             </div>
             <div className={ styles.projectRows }>
                 {
-                    props.projects.map((project, idx) => (
-                        <ProjectCard 
-                            key={idx}
-                            project={project}
-                        />
-                    ))                
-                }
-                
+                    projectCard                    
+                }                
             </div>
         </div>
     )
