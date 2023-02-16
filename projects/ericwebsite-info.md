@@ -1,7 +1,7 @@
 ---
-title: 'Trees'
+title: 'ERICWEBSITE.INFO'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'I wrote this game in OpenGL and C++ where you walk through an endless stylized forest. It is beautiful and I am proud of it.'
+blurb: 'My photography portfolio website. I made it with a Mithril.js front-end and a headless Ghost CMS backend both served from Docker containers on my Digital Ocean droplet'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280

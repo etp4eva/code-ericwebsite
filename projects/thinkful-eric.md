@@ -1,7 +1,7 @@
 ---
-title: 'Trees'
+title: 'ThinkfulEric'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'This is a brief explanation of the project and how I made it including with which technologies etc. TODO: clicking should link to a page showing a more detailed post'
+blurb: 'I built this simple meditation app with React Native (Expo) to meet my specific needs'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280

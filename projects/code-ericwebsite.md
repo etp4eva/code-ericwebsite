@@ -1,7 +1,7 @@
 ---
-title: 'Trees'
+title: 'CODE // ERICWEBSITE'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'I wrote this game in OpenGL and C++ where you walk through an endless stylized forest. It is beautiful and I am proud of it.'
+blurb: 'I made the website that you are currently using. It is a static Next.js app.'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280
