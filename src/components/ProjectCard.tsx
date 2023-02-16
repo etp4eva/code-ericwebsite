@@ -28,6 +28,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
 
     const videoBanner = (props.project.videoSrc) ? (
             <video
+                muted
+                playsInline
                 ref={ videoRef }
                 width={ width } height={ height } 
                 loop
