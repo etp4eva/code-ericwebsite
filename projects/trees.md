@@ -1,7 +1,7 @@
 ---
 title: 'Trees'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'I wrote this game in OpenGL and C++ where you walk through an endless stylized forest. It is beautiful and I am proud of it.'
+blurb: 'I wrote this game in <b>OpenGL</b> and <b>C++</b> where you walk through an endless stylized forest. It is beautiful and I am proud of it.'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280

@@ -79,7 +79,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             
                 <div className={ styles.textArea }>                
                         <h3>{ props.project.title }</h3>                
-                        <p>{ props.project.blurb }</p>                 
+                        <p dangerouslySetInnerHTML={{ __html: props.project.blurb }} />
                 </div>
             </Link>
         </article>

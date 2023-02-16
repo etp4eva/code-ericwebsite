@@ -1,7 +1,7 @@
 ---
 title: 'CODE // ERICWEBSITE'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'I made the website that you are currently using. It is a static Next.js app.'
+blurb: 'I made the website that you are currently using. It is a static <b>Next.js</b> app.'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280

@@ -1,7 +1,7 @@
 ---
 title: 'ERICWEBSITE.INFO'
 tags: ['code', 'game', 'c++', 'opengl']
-blurb: 'My photography portfolio website. I made it with a Mithril.js front-end and a headless Ghost CMS backend both served from Docker containers on my Digital Ocean droplet'
+blurb: 'My photography portfolio website. I made it with a <b>Mithril.js</b> front-end and a headless <b>Ghost CMS</b> backend both served from <b>Docker</b> containers on my <b>Digital Ocean</b> droplet'
 imgSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280
