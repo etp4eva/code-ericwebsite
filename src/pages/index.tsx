@@ -31,7 +31,7 @@ export default function Home({projects}: HomeProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>      
-      <body className={ [raleway.className, styles.body].join(" ") }>
+      <div className={ [raleway.className, styles.body].join(" ") }>
         <Header lockScale={ LockScale.REACTIVE }/>
         
         <main className={ styles.contentBox }>
@@ -43,7 +43,7 @@ export default function Home({projects}: HomeProps) {
 
         <Footer/>
         
-      </body>
+      </div>
     </>
   )
 }

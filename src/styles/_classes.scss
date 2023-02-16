@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'sizes';
+
+.body {
+    height: 100vh;
+    width: 100vw;  
+  
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+  }
+  
+  .contentBox {  
+    background: colors.$card-background-color;
+    background: colors.$card-background-gradient;
+  
+    border-bottom: solid 1px;
+    border-color: colors.$card-border-color;
+  
+    max-width: sizes.$content-width;
+  }
+  
+  @media only screen and (max-width: sizes.$content-width) {
+    .contentBox {
+      margin: 0;
+    }
+  
+  }
+  
+  @media only screen and (max-width: sizes.$max-width) {
+    .contentBox {
+      width: 100%;   
+  
+      text-align: justify;
+    }
+  
+    .contentBox p {
+      padding: 0px 10px;
+    }
+  }
+  
+  .contentBox p {
+    text-indent: 5%;
+  }

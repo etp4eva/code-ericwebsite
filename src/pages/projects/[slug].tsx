@@ -49,7 +49,7 @@ export const Projects = ({ project }: ProjectsProps) => {
     return (
         <>
             <Head>
-                <title>CODE // ERIC WEBSITE // {project.title}</title>
+                <title>CODE // ERIC WEBSITE </title>
                 <meta name="description" content="A little portfolio for a clever coder" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

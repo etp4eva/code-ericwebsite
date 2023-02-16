@@ -1,17 +1,5 @@
 @use 'colors';
 @use 'sizes';
+@use 'classes';
 
 // TODO: Share these between Home and Project somehow
-.body {
-    align-items: center;
-}
-
-.contentBox {  
-    background: colors.$card-background-color;
-    background: colors.$card-background-gradient;
-
-    border-bottom: solid 1px;
-    border-color: colors.$card-border-color;
-
-    max-width: sizes.$content-width;
-}
