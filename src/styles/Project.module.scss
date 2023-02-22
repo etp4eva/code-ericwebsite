@@ -13,6 +13,8 @@
     width: sizes.$content-width + 40px;
     background-size: cover;
     
+    border-top-right-radius: sizes.$rounder-corner-radius;
+    border-top-left-radius: sizes.$rounder-corner-radius;
 }
 
 .header h1 {
