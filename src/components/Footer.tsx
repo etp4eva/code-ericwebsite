@@ -1,6 +1,9 @@
 import styles from '@/styles/Footer.module.scss'
 import { MouseEventHandler, useRef } from 'react'
 
+// TODO: Glittering starfield animation in the background of the footer
+// perahsp when you click the smiley
+
 export const Footer = () => {
     
     const onClick: MouseEventHandler<HTMLElement> = (context) => {

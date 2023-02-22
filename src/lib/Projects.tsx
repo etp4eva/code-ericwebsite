@@ -13,6 +13,7 @@ export interface ProjectSummary {
     blurb: string;
     imgSrc: string;
     videoSrc?: string;
+    bannerSrc: string;
     imgWidth: number;
     imgHeight: number;
     imgScale: number;
@@ -20,6 +21,7 @@ export interface ProjectSummary {
 
 export interface Project {
     title: string;
+    bannerSrc: string;
     content: string;
 }
 
@@ -41,7 +43,8 @@ export const getProjectSummaries = (): ProjectSummary[] => {
             tags: matterResult.data.tags,
             blurb: matterResult.data.blurb,
             imgSrc: matterResult.data.imgSrc,
-            videoSrc: matterResult.data.videoSrc,
+            videoSrc: (matterResult.data.videoSrc) ? matterResult.data.videoSrc : null,
+            bannerSrc: matterResult.data.bannerSrc,
             imgWidth: matterResult.data.imgWidth,
             imgHeight: matterResult.data.imgHeight,
             imgScale: matterResult.data.imgScale,
@@ -70,6 +73,7 @@ export const getProjectDetails = async (slug: string) => {
 
     const projectDetails: Project = {
         title: matterResult.data.title,
+        bannerSrc: matterResult.data.bannerSrc,
         content: contentHtml,
     }
 

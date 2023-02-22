@@ -3,6 +3,7 @@ title: 'ThinkfulEric'
 tags: ['code', 'game', 'c++', 'opengl']
 blurb: 'I built this simple meditation app with <b>React Native (Expo)</b> to meet my specific needs'
 imgSrc: '/images/trees.jpg'
+bannerSrc: '/images/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280
 imgHeight: 400

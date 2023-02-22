@@ -3,6 +3,7 @@ import { Project, getProjectDetails, projectsDirectory } from "@/lib/Projects";
 import { GetStaticProps, GetStaticPropsContext } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Head from 'next/head';
+import Image from 'next/image'
 import { Header, LockScale } from '@/components/Header';
 import { Raleway } from '@next/font/google';
 import styles from '@/styles/Project.module.scss'
@@ -54,20 +55,22 @@ export const Projects = ({ project }: ProjectsProps) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <body className={ [raleway.className, styles.body].join(" ") }>
+            <div className={ [raleway.className, styles.body].join(" ") }>
                 <Header lockScale={ LockScale.THIN } />
 
-                { 
-                    // TODO: banner with image background 
-                }
-                <h1>{project.title}</h1>
+                <div 
+                    className={ styles.header } 
+                    style={{backgroundImage: `url('${project.bannerSrc}')`}}
+                >
+                    <h1>{project.title}</h1>
+                </div>
                 <main 
                     className={ styles.contentBox } 
                     dangerouslySetInnerHTML={{ __html: project.content }}
                 />
 
                 < Footer />
-            </body>
+            </div>
         </>
     )
 }
