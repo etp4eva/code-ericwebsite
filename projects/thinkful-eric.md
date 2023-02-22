@@ -1,10 +1,9 @@
 ---
 title: 'ThinkfulEric'
-tags: ['code', 'game', 'c++', 'opengl']
+tags: ['code', 'typescript', 'react-native', 'expo']
 blurb: 'I built this simple meditation app with <b>React Native (Expo)</b> to meet my specific needs'
-imgSrc: '/images/trees.jpg'
-bannerSrc: '/images/trees.jpg'
-videoSrc: '/videos/trees.webm'
+imgSrc: '/images/thinkful/lotusbig.webp'
+bannerSrc: '/images/thinkful/lotusbanner.webp'
 imgWidth: 1280
 imgHeight: 400
 imgScale: 0.33
@@ -12,14 +11,27 @@ imgScale: 0.33
 
 ## Purpose
 
-Here I would write a longer description of the thing with links to a youtube video and some screenshots I suppose. 
+I like to meditate. I do it every day. It helps me control my thoughts and provides a fertile mental state for creativity. My meditation process is simple but I have struggled to find a free app that provides for my needs without also cluttering it with things that I don't need. 
 
-Quisque at diam venenatis, maximus neque vitae, lacinia enim. Phasellus vitae placerat nisl. Nullam maximus at velit a commodo. Nullam placerat, magna id facilisis volutpat, erat erat pellentesque dolor, id vulputate lacus neque id sem. Nunc blandit euismod tellus eget euismod. Praesent consectetur sodales lacinia. Phasellus egestas dolor non odio molestie, ac lobortis mauris scelerisque. Mauris dapibus sed dolor vel tincidunt. Praesent placerat, arcu placerat molestie suscipit, neque lacus consequat odio, ac consectetur diam lorem ac felis. Etiam blandit molestie justo ac suscipit. In molestie ante ut quam mollis molestie. Nulla a nisi sagittis nibh volutpat gravida. Fusce ultricies tortor lectus. Duis a ultricies tellus.
+## Features
+
+My meditation app, ThinkfulEric (coming soon to the Google Play store), is everything that I want and nothing more. It provides a simple countdown timer where additional chimes can be added at any interval you wish if you like a progressive meditation. In addition it records your meditations in a log along with few basic notes about the experience and your state of mind that you can write in if you wish.
+
+I wrote it using **Expo** so it can run on every major platform easily. For now I am targeting Android devices but anybody can clone the repo and build it for iOS if they wish.
 
 ## Technology
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In convallis volutpat mi sit amet lobortis. Aenean metus odio, imperdiet nec tempor eget, gravida non est. In quis turpis convallis, faucibus ipsum sit amet, aliquet massa. Integer semper dignissim nisi quis aliquet. Sed sit amet dictum est, vitae condimentum nisl. Aliquam rhoncus eleifend quam in mattis. Praesent at nisi id erat pellentesque rutrum sed vel ante. Nullam tempus non mi at aliquam. Integer in semper augue. Cras nisi tellus, sodales in ultricies ac, ultricies ornare mi. Sed non pulvinar magna, quis venenatis massa. Nullam luctus mauris non leo suscipit aliquet. Ut a pretium odio. Fusce laoreet elit ac fringilla accumsan. Aliquam erat volutpat. 
+I used **Expo** because it provides a nice framework for development. I didn't need to write any native code for this project so there was no need to eject it. Much of the code you write is as you would for **React Native** which I enjoy working with as I am already familiar with **React**. Expo provides **TypeScript** support out of the box which I appreciate as well.
+
+This was a fairly simple project but I have some ambitions for mobile development and so have already begun to dip my toe into writing pure native code in **Kotlin**.
 
 ## Screenshots
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RqxIXjN6QiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**TODO: Make a video of this**
+
+<center>
+
+![ThinkfulEric home screen](/images/thinkful/image004.jpg) ![ThinkfulEric meditation timer](/images/thinkful/image006.jpg)
+
+![ThinkfulEric calendar view](/images/thinkful/image008.jpg) ![ThinkfulEric meditation log](/images/thinkful/image009.jpg)
+</center>
