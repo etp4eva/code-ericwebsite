@@ -10,16 +10,28 @@ imgHeight: 400
 imgScale: 0.33
 ---
 
+**TODO: better banner image**
+
 ## Purpose
 
-Here I would write a longer description of the thing with links to a youtube video and some screenshots I suppose. 
+I originally came up with the idea for this game around 5 years ago when I first moved to London from Vancouver, where I grew up. I loved London for all that it had to offer but still I missed the endless forests of British Columbia. I wanted to create a game where I could stroll through an endless forest. This is actually the third iteration of this game and not the last, each one has a completely different style and has been a technical improvement on the last.
 
-Quisque at diam venenatis, maximus neque vitae, lacinia enim. Phasellus vitae placerat nisl. Nullam maximus at velit a commodo. Nullam placerat, magna id facilisis volutpat, erat erat pellentesque dolor, id vulputate lacus neque id sem. Nunc blandit euismod tellus eget euismod. Praesent consectetur sodales lacinia. Phasellus egestas dolor non odio molestie, ac lobortis mauris scelerisque. Mauris dapibus sed dolor vel tincidunt. Praesent placerat, arcu placerat molestie suscipit, neque lacus consequat odio, ac consectetur diam lorem ac felis. Etiam blandit molestie justo ac suscipit. In molestie ante ut quam mollis molestie. Nulla a nisi sagittis nibh volutpat gravida. Fusce ultricies tortor lectus. Duis a ultricies tellus.
+## Features
+
+The original concept was fairly simple. I wanted a procedurally generated mountainous landscape filled with procedurally generated trees. In the next iteration you were a canoer on a lake with a painterly art style. In this most recent version it is a return to the forest with low res trees and some full-screen pixelation.
+
+What each version has in common was a need to asynchronously generate an endless landscape filled with trees and allow the player to move through it with gravity and collision. In the latest version I included a number of features that didn't exist in previous ones. These included snowy mountains, dynamic lighting through cloudy skies, and a day night cycle that featured the sun, moon, and stars.
 
 ## Technology
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In convallis volutpat mi sit amet lobortis. Aenean metus odio, imperdiet nec tempor eget, gravida non est. In quis turpis convallis, faucibus ipsum sit amet, aliquet massa. Integer semper dignissim nisi quis aliquet. Sed sit amet dictum est, vitae condimentum nisl. Aliquam rhoncus eleifend quam in mattis. Praesent at nisi id erat pellentesque rutrum sed vel ante. Nullam tempus non mi at aliquam. Integer in semper augue. Cras nisi tellus, sodales in ultricies ac, ultricies ornare mi. Sed non pulvinar magna, quis venenatis massa. Nullam luctus mauris non leo suscipit aliquet. Ut a pretium odio. Fusce laoreet elit ac fringilla accumsan. Aliquam erat volutpat. 
+I wrote every part of this game from the ground up in **C++** using **OpenGL** for rendering. I used **GLAD** for loading OpenGL symbols and **GLFW** for windowing and input. I used **libnoise** for terrain generation.
+
+I learned a lot while making this game about synchronizing threads and the finicky way you have to manage resources with OpenGL. Also I created some rather complex shaders and came up with some clever tricks for rendering a large scene in realtime. 
+
+In the end I am quite pleased with how it turned out. I am proud of this iteration but already thinking about the next version which I will program in **Rust** using **Vulkan**.
 
 ## Screenshots
+
+**TODO: Screenshots and video and such**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RqxIXjN6QiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
