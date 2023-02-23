@@ -2,8 +2,8 @@
 title: 'Trees'
 tags: ['code', 'game', 'c++', 'opengl']
 blurb: 'I wrote this game in <b>OpenGL</b> and <b>C++</b> where you walk through an endless stylized forest. It is beautiful and I am proud of it.'
-imgSrc: '/images/trees.jpg'
-bannerSrc: '/images/trees.jpg'
+imgSrc: '/images/trees/trees.jpg'
+bannerSrc: '/images/trees/trees.jpg'
 videoSrc: '/videos/trees.webm'
 imgWidth: 1280
 imgHeight: 400
@@ -33,7 +33,15 @@ I enjoy working with low level languages on high performance projects. Having to
 In the end I am quite pleased with how it turned out. I am proud of this iteration but already thinking about the next version which I will program in **Rust** using **Vulkan**.
 
 ## Screenshots
+<center>
 
-**TODO: Screenshots and video and such**
+![Trees screenshot 1](/images/trees/mpv-shot0010.jpg) 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RqxIXjN6QiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![Trees screenshot 2](/images/trees/mpv-shot0011.jpg)
+
+![Trees screenshot 3](/images/trees/mpv-shot0012.jpg)
+
+![Trees screenshot 4](/images/trees/mpv-shot0013.jpg)
+
+<iframe width="715" height="404" src="https://www.youtube.com/embed/f4zIOuDnpvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
