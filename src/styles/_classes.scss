@@ -15,6 +15,7 @@
   }
   
   .contentBox {  
+    position: relative;
     background: colors.$card-background-color;
     background: colors.$card-background-gradient;
   
@@ -33,13 +34,13 @@
   
   @media only screen and (max-width: sizes.$max-width) {
     .contentBox {
-      width: 100%;   
-  
+      width: 100%;  
+      padding: 0;
       text-align: justify;
     }
   
     .contentBox p {
-      padding: 0px 10px;
+      padding: 0px 20px;
     }
   }
 

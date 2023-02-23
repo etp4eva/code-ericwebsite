@@ -26,7 +26,9 @@ What each version has in common was a need to asynchronously generate an endless
 
 I wrote every part of this game from the ground up in **C++** using **OpenGL** for rendering. I used **GLAD** for loading OpenGL symbols and **GLFW** for windowing and input. I used **libnoise** for terrain generation.
 
-I learned a lot while making this game about synchronizing threads and the finicky way you have to manage resources with OpenGL. Also I created some rather complex shaders and came up with some clever tricks for rendering a large scene in realtime. 
+I learned a lot while making this game about synchronizing threads and the finicky way you have to manage resources with OpenGL. Also I created some rather complex shaders and came up with some clever tricks for rendering a large scene in realtime.
+
+I enjoy working with low level languages on high performance projects. Having to think about bit-width, data packing, and the way different algorithms will compile gives you a different point of view on the higher level problems. I find the arcane quality of working close to the bare metal in software very satisfying.
 
 In the end I am quite pleased with how it turned out. I am proud of this iteration but already thinking about the next version which I will program in **Rust** using **Vulkan**.
 

@@ -1,3 +1,20 @@
 @use 'colors';
 @use 'sizes';
 @use 'classes';
+
+.bgImage {
+    /*
+    background-image: url('/images/hello.webp');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    */
+    
+}
+
+.contentBox {
+    padding-top: 20px;
+}
+
+.contentBox p img {
+    margin-bottom: -3px;
+}

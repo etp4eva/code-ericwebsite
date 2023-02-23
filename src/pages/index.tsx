@@ -38,10 +38,12 @@ export default function Home({projects, blurb}: HomeProps) {
       <div className={ [raleway.className, styles.body].join(" ") }>
         <Header lockScale={ LockScale.REACTIVE }/>
         
+        <div className={ styles.bgImage }>
         <main 
           className={ styles.contentBox }
           dangerouslySetInnerHTML={{ __html: blurb }}
         />
+        </div>
 
         <ProjectList projects={projects}/>
 
