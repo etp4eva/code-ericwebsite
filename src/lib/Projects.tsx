@@ -79,3 +79,21 @@ export const getProjectDetails = async (slug: string) => {
 
     return projectDetails;
 }
+
+export const getIntro = async () => {
+    const contentDir = path.join(process.cwd(), '/content');
+    const fullPath = path.join(contentDir, 'blurb.md');
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    const matterResult = matter(fileContents);
+
+    const processedContent = await remark()
+        .use(html)
+        .use(remarkRehype, {allowDangerousHtml: true}) // Pass raw HTML strings through.
+        .use(rehypeStringify, {allowDangerousHtml: true})
+        .process(matterResult.content);
+
+    const contentHtml = processedContent.toString();
+
+    return contentHtml;
+}
