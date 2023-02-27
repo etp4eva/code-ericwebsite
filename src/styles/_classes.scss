@@ -27,9 +27,17 @@
   
   @media only screen and (max-width: sizes.$content-width) {
     .contentBox {
-      margin: 0;
+      width: 100%;
     }
-  
+
+    .contentBox p {
+      padding: 0px 20px;
+    }
+
+    .contentBox h1 {
+      padding: 0px 20px;
+    }
+ 
   }
   
   @media only screen and (max-width: sizes.$max-width) {
@@ -45,5 +53,9 @@
   }
 
   .contentBox img {
+    max-width: 100%;
+  }
+
+  .contentBox iframe {
     max-width: 100%;
   }
