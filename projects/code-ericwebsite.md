@@ -32,6 +32,8 @@ Since Next.js provides static page compilation and my portfolio will not change 
 
 All of my web services are run out of **Docker** containers on my **Digital Ocean** droplet using **NGINX** to serve static content and as a reverse proxy. For this project I have a workflow set up such that when I commit new versions of the portfolio site to GitHub they are drawn down to my droplet, compiled, and immediately made available.
 
+See the full implementation for yourself on [<img src="/images/github.png" width="20px" height="20px" /> GitHub](https://github.com/etp4eva/code-ericwebsite).
+
 ## Screenshots
 
-**TODO: TAKE SCREENSHOTS AFTER DONE EVERYTHING ELSE**
+![CODE // ERICWEBSITE Screenshot](/images/portfolio.png)

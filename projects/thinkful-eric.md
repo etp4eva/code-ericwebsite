@@ -25,13 +25,16 @@ I used **Expo** because it provides a nice framework for development. I didn't n
 
 This was a fairly simple project but I have some ambitions for mobile development and so have already begun to dip my toe into writing pure native code in **Kotlin**.
 
-## Screenshots
+See the full implementation for yourself on [<img src="/images/github.png" width="20px" height="20px" /> GitHub](https://github.com/etp4eva/ThinkfulEric).
 
-**TODO: Make a video of this**
+## Screenshots
 
 <center>
 
 ![ThinkfulEric home screen](/images/thinkful/image004.jpg) ![ThinkfulEric meditation timer](/images/thinkful/image006.jpg)
 
 ![ThinkfulEric calendar view](/images/thinkful/image008.jpg) ![ThinkfulEric meditation log](/images/thinkful/image009.jpg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xND3UN1lomo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </center>

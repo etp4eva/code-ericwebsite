@@ -10,8 +10,6 @@ imgHeight: 400
 imgScale: 0.33
 ---
 
-**TODO: better banner image**
-
 ## Purpose
 
 I originally came up with the idea for this game around 5 years ago when I first moved to London from Vancouver, where I grew up. I loved London for all that it had to offer but still I missed the endless forests of British Columbia. I wanted to create a game where I could stroll through an endless forest. This is actually the third iteration of this game and not the last, each one has a completely different style and has been a technical improvement on the last.
