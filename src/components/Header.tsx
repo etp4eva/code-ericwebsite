@@ -72,13 +72,15 @@ export const Header = (props: HeaderProps) => {
                              
                 <div className={ styles.column2 }></div>
 
-                <Image 
-                    src="/images/eric.jpg"
-                    className={ styles.roundImageThin }
-                    height={100}
-                    width={100}
-                    alt="Eric Pledger" 
-                />   
+                <Link href="/">
+                    <Image 
+                        src="/images/eric.jpg"
+                        className={ styles.roundImageThin }
+                        height={100}
+                        width={100}
+                        alt="Eric Pledger" 
+                    />
+                </Link>
             </header>
             {thickHeader}
         </>
