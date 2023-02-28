@@ -31,9 +31,9 @@ See the full implementation for yourself on [<img src="/images/github.png" width
 
 <center>
 
-![ThinkfulEric home screen](/images/thinkful/image004.jpg) ![ThinkfulEric meditation timer](/images/thinkful/image006.jpg)
+[![ThinkfulEric home screen](/images/thinkful/image004.jpg)](/images/thinkful/image004.jpg) [![ThinkfulEric meditation timer](/images/thinkful/image006.jpg)](/images/thinkful/image006.jpg)
 
-![ThinkfulEric calendar view](/images/thinkful/image008.jpg) ![ThinkfulEric meditation log](/images/thinkful/image009.jpg)
+[![ThinkfulEric calendar view](/images/thinkful/image008.jpg)](/images/thinkful/image008.jpg) [![ThinkfulEric meditation log](/images/thinkful/image009.jpg)](/images/thinkful/image009.jpg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xND3UN1lomo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

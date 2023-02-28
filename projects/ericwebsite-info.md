@@ -27,4 +27,4 @@ The Ghost CMS lives in a **Docker** container on my **Digital Ocean** droplet al
 
 ## Screenshots
 
-![Eric Website Screenshot](/images/ewsscreenshot.png)
+[![Eric Website Screenshot](/images/ewsscreenshot.png)](/images/ewsscreenshot.png)

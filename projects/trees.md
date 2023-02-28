@@ -33,13 +33,13 @@ In the end I am quite pleased with how it turned out. I am proud of this iterati
 ## Screenshots
 <center>
 
-![Trees screenshot 1](/images/trees/mpv-shot0010.jpg) 
+[![Trees screenshot 1](/images/trees/mpv-shot0010.jpg)](/images/trees/mpv-shot0010.jpg)
 
-![Trees screenshot 2](/images/trees/mpv-shot0011.jpg)
+[![Trees screenshot 2](/images/trees/mpv-shot0011.jpg)](/images/trees/mpv-shot0011.jpg)
 
-![Trees screenshot 3](/images/trees/mpv-shot0012.jpg)
+[![Trees screenshot 3](/images/trees/mpv-shot0012.jpg)](/images/trees/mpv-shot0012.jpg)
 
-![Trees screenshot 4](/images/trees/mpv-shot0013.jpg)
+[![Trees screenshot 4](/images/trees/mpv-shot0013.jpg)](/images/trees/mpv-shot0013.jpg)
 
 <iframe width="715" height="404" src="https://www.youtube.com/embed/f4zIOuDnpvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>

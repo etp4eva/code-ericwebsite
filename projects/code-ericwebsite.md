@@ -36,4 +36,4 @@ See the full implementation for yourself on [<img src="/images/github.png" width
 
 ## Screenshots
 
-![CODE // ERICWEBSITE Screenshot](/images/portfolio.png)
+[![CODE // ERICWEBSITE Screenshot](/images/portfolio.png)](/images/portfolio.png)
