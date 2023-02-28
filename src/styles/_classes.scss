@@ -28,6 +28,8 @@
   @media only screen and (max-width: sizes.$content-width) {
     .contentBox {
       width: 100%;
+      padding: 0;
+      margin: 0;
     }
 
     .contentBox p {
@@ -44,6 +46,7 @@
     .contentBox {
       width: 100%;  
       padding: 0;
+      margin: 0;
       text-align: justify;
     }
   

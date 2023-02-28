@@ -12,9 +12,9 @@ export const ProjectCard = (props: ProjectCardProps) => {
     const [isPlaying, setPlaying] = useState<Boolean>(false);
     const videoRef = useRef<HTMLVideoElement>(null);
     
-    const [width, height] = [
-        props.project.imgWidth * props.project.imgScale,
-        props.project.imgHeight * props.project.imgScale
+    const [width, height] = [420,130
+        //props.project.imgWidth * props.project.imgScale,
+        //props.project.imgHeight * props.project.imgScale
     ]
 
     const imageBanner = (

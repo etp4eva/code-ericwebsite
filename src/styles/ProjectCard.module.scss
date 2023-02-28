@@ -13,6 +13,11 @@
     border-top-left-radius: sizes.$rounder-corner-radius;
 }
 
+.imgWindow video {
+    border-top-right-radius: sizes.$rounder-corner-radius;
+    border-top-left-radius: sizes.$rounder-corner-radius;
+}
+
 .stacked {
     grid-area: 1 /1;
 }
@@ -27,17 +32,39 @@
 }
 
 
-@media only screen and (max-width: sizes.$max-width) {
-    .card {
-        width: 100vw; 
-    }
+@media only screen and (max-width: 422px) {
+    
     .imgWindow {
-        width: 100vw;
-        overflow-x: hidden;
+        max-width: 422px;
+        overflow: hidden;
+
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .imgWindow img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .imgWindow video {
+        width: 100%; 
+        height: 100%;
+        object-fit: contain;
+
+        overflow-y: hidden;
+
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 
     .card {
+        width: 100%;
         text-align: justify;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 }
 
