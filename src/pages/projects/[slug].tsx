@@ -62,7 +62,9 @@ export const Projects = ({ project }: ProjectsProps) => {
                     className={ styles.header } 
                     style={{backgroundImage: `url('${project.bannerSrc}')`}}
                 >
-                    <h1>{project.title}</h1>
+                    <div className={ styles.headerTextContainer }>
+                        <h1>{project.title}</h1>
+                    </div>
                 </div>
                 <main 
                     className={ styles.contentBox } 
